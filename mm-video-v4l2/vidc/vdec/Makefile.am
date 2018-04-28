@@ -3,6 +3,7 @@ AM_CFLAGS += -Wundef
 AM_CFLAGS += -Wstrict-prototypes
 AM_CFLAGS += -Wno-trigraphs
 AM_CFLAGS += -g -O3
+AM_CFLAGS += -Wno-unused-variable
 
 AM_CPPFLAGS := -D__alignx\(x\)=__attribute__\(\(__aligned__\(x\)\)\)
 AM_CPPFLAGS += -D__align=__alignx
@@ -22,6 +23,7 @@ AM_CPPFLAGS += -Wno-parentheses
 AM_CPPFLAGS += -D_ANDROID_ICS_
 AM_CPPFLAGS += -D_MSM8974_
 AM_CPPFLAGS += -DPROCESS_EXTRADATA_IN_OUTPUT_PORT
+AM_CPPFLAGS += -Wno-unused-variable
 
 #Hypervisor
 if TARGET_HYPERVISOR
