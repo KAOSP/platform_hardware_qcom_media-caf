@@ -1,4 +1,4 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-media))
+ifeq ($(TARGET_QCOM_MEDIA_VARIANT),caf-apq8084)
 
 ifneq (, $(filter aarch64 arm64, $(TARGET_ARCH)))
     $(info TODOAArch64: $(LOCAL_PATH)/Android.mk: Enable compile for 64 bit)
